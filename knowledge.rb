@@ -2,10 +2,10 @@ class Module
 def attribute(attr, &block)
   case attr
     when Hash
-      name    = attr.keys[0]
+      name  = attr.keys[0]
       value = attr[name]
     when String, Symbol
-      name    = attr
+      name  = attr
       value = nil
   end
 
